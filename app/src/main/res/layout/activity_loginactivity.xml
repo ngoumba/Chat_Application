@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appColor"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".vue.LoginActivity">
+
+
+    <TextView
+        android:id="@+id/bienvenu"
+        android:layout_width="341dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="35dp"
+        android:text="Bienvenu"
+        android:textColor="@color/lightGrey"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/seconnecter"
+        android:layout_width="352dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="30dp"
+        android:text="Connectez-vous !"
+        android:textColor="@color/lightGrey"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bienvenu" />
+
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="98dp"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="numero téléphone"
+        android:minHeight="48dp"
+        android:padding="9dp"
+        android:textColor="@color/lightGrey"
+        android:textColorHint="@color/chatbackground"
+        app:layout_constraintBottom_toTopOf="@+id/SeConnecter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seconnecter"
+        tools:text="numero de telephone" />
+
+
+    <Button
+        android:id="@+id/SeConnecter"
+        android:layout_width="161dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="125dp"
+        android:text="Connexion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phonenumber" />
+
+    <TextView
+        android:id="@+id/textredirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="15dp"
+        android:text="vous n'avez pas encore de compte?"
+        android:textColor="@color/lightGrey"
+        app:layout_constraintBottom_toTopOf="@+id/inscriptionRedirrect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SeConnecter" />
+
+    <TextView
+        android:id="@+id/inscriptionRedirrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="297dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="163dp"
+        android:text="M'INSCRIRE ?"
+        android:textColor="@color/lightGrey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textredirect" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
