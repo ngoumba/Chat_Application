@@ -129,12 +129,13 @@ public class InscriptionActivity extends AppCompatActivity {
     }
 
     private void startPhoneNumberVerification() {
-        PhoneAuthProvider.verifyPhoneNumber(
-                binding.numero.getText().toString(),
-                60,
-                TimeUnit.SECONDS,
-                this,
-                mCallbacks);
+        options = PhoneAuthOptions.newBuilder(auth)
+                        .setPhoneNumber(binding.numero.getText().toString())       // Phone number to verify
+                        .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
+                        .setActivity(this)                 // Activity (for callback binding)
+                        .setCallbacks(mCallbacks)          // OnVerificationStateChangedCallbacks
+                        .build();
+        PhoneAuthProvider.verifyPhoneNumber(options);
     }
 
 
