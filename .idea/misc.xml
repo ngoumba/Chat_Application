@@ -4,13 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/etade/AndroidStudioProjects/ChatApplication/app/src/main/java/com/example/chatapplication/fragments/fragment_amis.xml" value="0.12329234972677595" />
-        <entry key="..\:/Users/etade/AndroidStudioProjects/ChatApplication/app/src/main/res/layout/activity_contact.xml" value="0.22" />
+        <entry key="..\:/Users/etade/AndroidStudioProjects/ChatApplication/app/src/main/res/layout/activity_contact.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/etade/AndroidStudioProjects/ChatApplication/app/src/main/res/layout/activity_inscription.xml" value="0.1" />
         <entry key="..\:/Users/etade/AndroidStudioProjects/ChatApplication/app/src/main/res/layout/activity_loginactivity.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/etade/AndroidStudioProjects/ChatApplication/app/src/main/res/layout/activity_main.xml" value="0.12" />
         <entry key="..\:/Users/etade/AndroidStudioProjects/ChatApplication/app/src/main/res/layout/activity_message.xml" value="0.12329234972677595" />
-        <entry key="..\:/Users/etade/AndroidStudioProjects/ChatApplication/app/src/main/res/layout/fragment_amis.xml" value="0.1" />
+        <entry key="..\:/Users/etade/AndroidStudioProjects/ChatApplication/app/src/main/res/layout/fragment_amis.xml" value="0.12" />
         <entry key="..\:/Users/etade/AndroidStudioProjects/ChatApplication/app/src/main/res/layout/fragment_potentiel_amis.xml" value="0.1" />
+        <entry key="..\:/Users/etade/AndroidStudioProjects/ChatApplication/app/src/main/res/layout/layout_uncontact.xml" value="0.1" />
       </map>
     </option>
   </component>

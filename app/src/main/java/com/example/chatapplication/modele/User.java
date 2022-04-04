@@ -1,22 +1,26 @@
 package com.example.chatapplication.modele;
 
 public class User {
-    private String nom;
+    private String id;
     private String prenom;
     private String login;
-    private Long numerotel;
+    private String numerotel;
     private String profil;
+
+    public String getPhoto() {
+        return photo;
+    }
+
     private String photo;
 
-    public User(String nom, String prenom, String login, Long numerotel) {
-        this.nom = nom;
+
+    public User(String id, String prenom, String login, String numerotel, String profil, String photo) {
+        this.id = id;
         this.prenom = prenom;
         this.login = login;
         this.numerotel = numerotel;
-    }
-
-    public String getNom() {
-        return nom;
+        this.profil = profil;
+        this.photo = photo;
     }
 
     public String getPrenom() {
@@ -27,12 +31,16 @@ public class User {
         return login;
     }
 
-    public Long getNumerotel() {
+    public String getNumerotel() {
         return numerotel;
     }
 
     public String getProfil() {
         return profil;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public void setProfil(String profil) {
