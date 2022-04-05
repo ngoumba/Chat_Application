@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.chatapplication">
+    package="ucad.esp.dgi.chatapplication">
 
-    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,26 +12,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ChatApplication">
-        <meta-data
-            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
-            android:value="true"/>
         <activity
-            android:name=".vue.ContactActivity"
+            android:name=".Vue.ItemChatActivity"
             android:exported="false" />
         <activity
-            android:name=".vue.MessageActivity"
+            android:name=".Vue.ChatActivity"
             android:exported="false" />
         <activity
-            android:name=".vue.LoginActivity"
+            android:name=".Vue.ItemUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vue.ContactsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vue.Main"
+            android:exported="false" />
+        <activity
+            android:name=".Vue.Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".vue.InscriptionActivity"
-            android:exported="true" />
     </application>
 
 </manifest>

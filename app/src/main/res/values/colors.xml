@@ -7,18 +7,4 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
-    <color name="colorPrimary">    #3333ff</color>
-    <color name="colorPrimaryDark"> #000080 </color>
-    <color name="colorAccent">  #9999ff</color>
-    <color name="lightGrey">      #EDEDED</color>
-    <color name="appColor"> #00134d</color>
-    <color name="red">  #9F0B0B</color>
-    <color name="status_background">  #8080ff</color>
-    <color name="chat_background">  #80bfff</color>
-    <color name="fb_color">  #3c5793</color>
-    <color name="lightgreen">  #e5ffcc</color>
-    <color name="settingsIconColor">  #4d79ff</color>
-    <color name="grayBackground">  #ccd9ff</color>
-    <color name="chatbackground">  #AAAAAA</color>
 </resources>
