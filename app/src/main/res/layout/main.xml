@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Vue.Main"
+    tools:context=".Main"
     android:orientation="vertical">
 
     <LinearLayout
@@ -13,19 +13,23 @@
         <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="find user"
-            android:id="@+id/findUser"
-            android:layout_marginEnd="26dp"
-            android:layout_marginBottom="63dp" />
+            android:text="Liste contacts"
+            android:id="@+id/findUser" />
 
         <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="logout"
-            android:id="@+id/logout"
-            android:layout_marginEnd="26dp"
-            android:layout_marginBottom="63dp" />
+            android:id="@+id/logout" />
 
+        <!--button for opening our stories activity-->
+        <com.google.android.material.chip.Chip
+            android:id="@+id/idBtnStories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:onClick="ShowStatus"
+            android:text="Status" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

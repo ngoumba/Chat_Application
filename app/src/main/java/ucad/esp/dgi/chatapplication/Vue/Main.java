@@ -185,4 +185,9 @@ public class Main extends AppCompatActivity {
             requestPermissions(new String[]{Manifest.permission.WRITE_CONTACTS, Manifest.permission.READ_CONTACTS}, 1);
         }
     }
+
+    public void ShowStatus(View view) {
+        Intent intent = new Intent(Main.this, StatusActivity.class);
+        startActivity(intent);
+    }
 }
